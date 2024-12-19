@@ -67,3 +67,279 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+nav {
+  /* background: linear-gradient(to right, #2563eb, #7c3aed); */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  color: white;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+nav .logo:hover {
+  color: #facc15;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav .nav-links a:hover {
+  background-color: #facc15;
+  color: #1e40af;
+  transform: scale(1.05);
+}
+
+nav .cta-button {
+  background-color: #facc15;
+  color: #1e40af;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+nav .cta-button:hover {
+  background-color: #fbbf24;
+  transform: translateY(-2px);
+}
+
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav .nav-links {
+      display: none;
+  }
+
+  nav .cta-button {
+      display: none;
+  }
+
+  nav .menu-icon {
+      display: block;
+  }
+}
+
+nav .menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav .menu-icon {
+      display: block;
+  }
+  
+  nav .nav-links.mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #2563eb;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  nav .nav-links.mobile a {
+      padding: 0.8rem;
+      font-size: 1.2rem;
+      text-align: center;
+  }
+
+  nav .nav-links.mobile a:hover {
+      background-color: #7c3aed;
+  }
+}
+
+.hackathon-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #2563eb, #7c3aed);
+}
+
+.signup-form {
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  color: #555;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #1e40af, #6d28d9);
+  transform: translateY(-2px);
+}
+
+.submit-btn:focus {
+  outline: none;
+}
